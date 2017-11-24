@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnquiryDialFollowUpViewController">
+            <connections>
+                <outlet property="btnOfficeVisit" destination="pvq-7s-SWe" id="wIR-SB-WY2"/>
+                <outlet property="btnOnlyToday" destination="0VW-3U-5zT" id="WL9-jp-Ls8"/>
+                <outlet property="btnPending" destination="hi2-3i-y71" id="MSp-2M-SN0"/>
+                <outlet property="btnSiteVisit" destination="B75-Md-HuQ" id="QK2-e6-ELd"/>
+                <outlet property="searchBar" destination="xay-8c-Pgf" id="ojB-wT-wHX"/>
+                <outlet property="tblDialFollowUp" destination="1Mn-pH-Q4u" id="NsU-L5-TSz"/>
+                <outlet property="view" destination="WAU-S1-TEe" id="jMl-cZ-nGi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="57" y="73"/>
+        </view>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WAU-S1-TEe">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hi2-3i-y71">
+                    <rect key="frame" x="16" y="22" width="35" height="35"/>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                    <state key="normal" image="Uncheck">
+                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleButtonEvent:" destination="-1" eventType="touchUpInside" id="SU7-U7-Nrl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BN-Ko-Qa4">
+                    <rect key="frame" x="66" y="27" width="76" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="dPP-KK-BeX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VW-3U-5zT">
+                    <rect key="frame" x="181" y="22" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="lsd-BK-gzz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                    <state key="normal" image="Uncheck">
+                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleButtonEvent:" destination="-1" eventType="touchUpInside" id="W3M-NF-Y9t"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udn-we-Qvw">
+                    <rect key="frame" x="228" y="30" width="77" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvq-7s-SWe">
+                    <rect key="frame" x="16" y="67" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="zLw-HY-Q4P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                    <state key="normal" image="Uncheck">
+                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleButtonEvent:" destination="-1" eventType="touchUpInside" id="Lh1-GP-gsl"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office Visit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhr-5v-Raj">
+                    <rect key="frame" x="66" y="75" width="76" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B75-Md-HuQ">
+                    <rect key="frame" x="181" y="67" width="35" height="35"/>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                    <state key="normal" image="Uncheck">
+                        <color key="titleColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="toggleButtonEvent:" destination="-1" eventType="touchUpInside" id="CZO-y5-EJ1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Site Visit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vY-1A-HnJ">
+                    <rect key="frame" x="228" y="75" width="77" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2n-dv-2LL">
+                    <rect key="frame" x="16" y="113" width="343" height="38"/>
+                    <color key="backgroundColor" red="0.086274509799999996" green="0.54901960780000003" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                    <state key="normal" title="Search">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSubmitTapped:" destination="-1" eventType="touchUpInside" id="xtI-6M-sZm"/>
+                    </connections>
+                </button>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="xay-8c-Pgf">
+                    <rect key="frame" x="0.0" y="168" width="375" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Mn-pH-Q4u">
+                    <rect key="frame" x="0.0" y="217" width="375" height="450"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="1e2-Yf-dZq"/>
+                        <outlet property="delegate" destination="-1" id="R0o-nK-Prx"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B75-Md-HuQ" firstAttribute="leading" secondItem="WAU-S1-TEe" secondAttribute="leading" constant="181" id="1xt-1H-fQc"/>
+                <constraint firstItem="9BN-Ko-Qa4" firstAttribute="firstBaseline" secondItem="udn-we-Qvw" secondAttribute="baseline" constant="-3" id="3gM-ta-RGg"/>
+                <constraint firstAttribute="trailing" secondItem="k2n-dv-2LL" secondAttribute="trailing" constant="16" id="6Hc-du-KJS"/>
+                <constraint firstItem="0VW-3U-5zT" firstAttribute="top" secondItem="hi2-3i-y71" secondAttribute="top" id="6Ho-Wf-AVE"/>
+                <constraint firstItem="9BN-Ko-Qa4" firstAttribute="trailing" secondItem="dhr-5v-Raj" secondAttribute="trailing" id="6hB-tP-KT0"/>
+                <constraint firstItem="k2n-dv-2LL" firstAttribute="top" secondItem="2vY-1A-HnJ" secondAttribute="bottom" constant="20" id="9GF-4r-qBs"/>
+                <constraint firstItem="2vY-1A-HnJ" firstAttribute="baseline" secondItem="pvq-7s-SWe" secondAttribute="firstBaseline" constant="22.5" id="ALU-yR-3ZP"/>
+                <constraint firstItem="pvq-7s-SWe" firstAttribute="leading" secondItem="WAU-S1-TEe" secondAttribute="leading" constant="16" id="CmE-nX-1Bi"/>
+                <constraint firstItem="2vY-1A-HnJ" firstAttribute="leading" secondItem="udn-we-Qvw" secondAttribute="leading" id="DOR-l6-cvn"/>
+                <constraint firstItem="dhr-5v-Raj" firstAttribute="leading" secondItem="WAU-S1-TEe" secondAttribute="leading" constant="66" id="ELa-dN-XJW"/>
+                <constraint firstItem="xay-8c-Pgf" firstAttribute="top" secondItem="k2n-dv-2LL" secondAttribute="bottom" constant="17" id="Fdt-Jq-O5Q"/>
+                <constraint firstItem="1Mn-pH-Q4u" firstAttribute="top" secondItem="xay-8c-Pgf" secondAttribute="bottom" constant="5" id="GXo-lL-F3B"/>
+                <constraint firstItem="B75-Md-HuQ" firstAttribute="trailing" secondItem="0VW-3U-5zT" secondAttribute="trailing" id="IN6-JI-5np"/>
+                <constraint firstAttribute="trailing" secondItem="xay-8c-Pgf" secondAttribute="trailing" id="KEN-ir-tSV"/>
+                <constraint firstItem="9BN-Ko-Qa4" firstAttribute="leading" secondItem="hi2-3i-y71" secondAttribute="trailing" constant="15" id="NqG-Kl-Dc8"/>
+                <constraint firstItem="hi2-3i-y71" firstAttribute="top" secondItem="WAU-S1-TEe" secondAttribute="top" constant="22" id="Og8-lg-bSU"/>
+                <constraint firstItem="2vY-1A-HnJ" firstAttribute="leading" secondItem="B75-Md-HuQ" secondAttribute="trailing" constant="12" id="Qnp-TL-cQI"/>
+                <constraint firstItem="0VW-3U-5zT" firstAttribute="bottom" secondItem="hi2-3i-y71" secondAttribute="bottom" id="QtB-do-Gkv"/>
+                <constraint firstItem="k2n-dv-2LL" firstAttribute="leading" secondItem="WAU-S1-TEe" secondAttribute="leading" constant="16" id="Sts-RW-kZO"/>
+                <constraint firstItem="2vY-1A-HnJ" firstAttribute="top" secondItem="udn-we-Qvw" secondAttribute="bottom" constant="27" id="U7F-rz-2Hx"/>
+                <constraint firstItem="dhr-5v-Raj" firstAttribute="baseline" secondItem="2vY-1A-HnJ" secondAttribute="baseline" id="ZE2-uy-E8Q"/>
+                <constraint firstItem="hi2-3i-y71" firstAttribute="leading" secondItem="pvq-7s-SWe" secondAttribute="leading" id="a2n-FI-lg1"/>
+                <constraint firstItem="B75-Md-HuQ" firstAttribute="bottom" secondItem="pvq-7s-SWe" secondAttribute="bottom" id="aOO-qy-b5p"/>
+                <constraint firstItem="B75-Md-HuQ" firstAttribute="top" secondItem="pvq-7s-SWe" secondAttribute="top" id="cHe-1S-LcL"/>
+                <constraint firstAttribute="bottom" secondItem="1Mn-pH-Q4u" secondAttribute="bottom" id="eWx-ey-Ns5"/>
+                <constraint firstItem="B75-Md-HuQ" firstAttribute="leading" secondItem="0VW-3U-5zT" secondAttribute="leading" id="gdz-lT-jkK"/>
+                <constraint firstItem="xay-8c-Pgf" firstAttribute="centerX" secondItem="k2n-dv-2LL" secondAttribute="centerX" id="h4C-Xw-vFi"/>
+                <constraint firstItem="pvq-7s-SWe" firstAttribute="top" secondItem="hi2-3i-y71" secondAttribute="bottom" constant="10" id="hfK-CQ-3yq"/>
+                <constraint firstItem="0VW-3U-5zT" firstAttribute="leading" secondItem="9BN-Ko-Qa4" secondAttribute="trailing" constant="39" id="jRL-Vg-c3J"/>
+                <constraint firstItem="2vY-1A-HnJ" firstAttribute="trailing" secondItem="udn-we-Qvw" secondAttribute="trailing" id="mLP-ps-24S"/>
+                <constraint firstItem="9BN-Ko-Qa4" firstAttribute="leading" secondItem="dhr-5v-Raj" secondAttribute="leading" id="phk-CV-99y"/>
+                <constraint firstItem="xay-8c-Pgf" firstAttribute="leading" secondItem="1Mn-pH-Q4u" secondAttribute="leading" id="q2b-6e-htK"/>
+                <constraint firstItem="B75-Md-HuQ" firstAttribute="top" secondItem="WAU-S1-TEe" secondAttribute="top" constant="67" id="rR9-Pf-b8m"/>
+                <constraint firstItem="hi2-3i-y71" firstAttribute="trailing" secondItem="pvq-7s-SWe" secondAttribute="trailing" id="vbw-dl-zdI"/>
+                <constraint firstItem="xay-8c-Pgf" firstAttribute="trailing" secondItem="1Mn-pH-Q4u" secondAttribute="trailing" id="ycN-il-oGO"/>
+            </constraints>
+            <point key="canvasLocation" x="-522" y="16"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Uncheck" width="50" height="50"/>
+    </resources>
+</document>
