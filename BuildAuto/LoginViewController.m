@@ -64,6 +64,9 @@
     [self setKeyboardControls:[[BSKeyboardControls alloc] initWithFields:fields]];
     [self.keyboardControls setDelegate:self];
     
+    
+    // Ajay - Viveak working here 
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{
