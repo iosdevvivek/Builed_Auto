@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class LoginViewController;
+@class EnquiryDetailsVC;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -16,6 +17,9 @@
 
 @property (strong, nonatomic) LoginViewController *LoginView;
 @property (nonatomic, retain) UINavigationController *navigationController;
+
+
+@property (strong, nonatomic) EnquiryDetailsVC *EnquiryDetails;
 
 @end
 

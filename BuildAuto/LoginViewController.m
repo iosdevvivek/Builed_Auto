@@ -64,11 +64,6 @@
     [self setKeyboardControls:[[BSKeyboardControls alloc] initWithFields:fields]];
     [self.keyboardControls setDelegate:self];
     
-    
-    // Ajay - Viveak working here
-    //vivek working here..
-    // vivek working on release vivek branch...
-    
 }
 
 -(void)viewWillAppear:(BOOL)animated{

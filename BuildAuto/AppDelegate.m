@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "EnquiryDetailsVC.h"
 
 #import "JWSlideMenuController.h"
 #import "JWNavigationController.h"
@@ -26,6 +27,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+     
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
@@ -104,11 +108,23 @@
         [self.window makeKeyAndVisible];
         
     }else{
+        
+        
+        
+        _EnquiryDetails = [[EnquiryDetailsVC alloc]initWithNibName:@"EnquiryDetailsVC" bundle:nil];
+        navigationController = [[UINavigationController alloc]initWithRootViewController:_EnquiryDetails];
+        self.window.rootViewController = self.navigationController;
+        self.window.backgroundColor = [UIColor whiteColor];
+        [self.window makeKeyAndVisible];
+        
+       /*
         LoginView = [[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
         navigationController = [[UINavigationController alloc]initWithRootViewController:LoginView];
         self.window.rootViewController = self.navigationController;
         self.window.backgroundColor = [UIColor whiteColor];
         [self.window makeKeyAndVisible];
+        
+        */
     }
     
     return YES;

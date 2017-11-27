@@ -125,6 +125,8 @@
 		A4E2606E1ED140FE00A424F2 /* EnquiryDialFollowUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E2606C1ED140FE00A424F2 /* EnquiryDialFollowUpViewController.xib */; };
 		A4E260721ED157C700A424F2 /* DialFollowUPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E260701ED157C700A424F2 /* DialFollowUPTableViewCell.m */; };
 		A4E260731ED157C700A424F2 /* DialFollowUPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E260711ED157C700A424F2 /* DialFollowUPTableViewCell.xib */; };
+		F765FE991FC5E0CF00304A02 /* EnquiryDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F765FE971FC5E0CF00304A02 /* EnquiryDetailsVC.m */; };
+		F765FE9A1FC5E0CF00304A02 /* EnquiryDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F765FE981FC5E0CF00304A02 /* EnquiryDetailsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -305,6 +307,9 @@
 		A4E2606F1ED157C700A424F2 /* DialFollowUPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialFollowUPTableViewCell.h; sourceTree = "<group>"; };
 		A4E260701ED157C700A424F2 /* DialFollowUPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialFollowUPTableViewCell.m; sourceTree = "<group>"; };
 		A4E260711ED157C700A424F2 /* DialFollowUPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialFollowUPTableViewCell.xib; sourceTree = "<group>"; };
+		F765FE961FC5E0CF00304A02 /* EnquiryDetailsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnquiryDetailsVC.h; sourceTree = "<group>"; };
+		F765FE971FC5E0CF00304A02 /* EnquiryDetailsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnquiryDetailsVC.m; sourceTree = "<group>"; };
+		F765FE981FC5E0CF00304A02 /* EnquiryDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnquiryDetailsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -522,6 +527,7 @@
 				139FE0FD1B7700DE007988C3 /* BuildingListViewController */,
 				136819871B6E5F47000FAAFD /* ProjectsViewController */,
 				134615DC1B4CBD1F007E3FB2 /* LoginViewController */,
+				F765FE9B1FC5E10000304A02 /* EnquiryDetailViewController */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -767,6 +773,16 @@
 			name = OutstandingSummary;
 			sourceTree = "<group>";
 		};
+		F765FE9B1FC5E10000304A02 /* EnquiryDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F765FE961FC5E0CF00304A02 /* EnquiryDetailsVC.h */,
+				F765FE971FC5E0CF00304A02 /* EnquiryDetailsVC.m */,
+				F765FE981FC5E0CF00304A02 /* EnquiryDetailsVC.xib */,
+			);
+			name = EnquiryDetailViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -816,11 +832,12 @@
 				TargetAttributes = {
 					134615B21B4CBCE3007E3FB2 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = W2P5VAXR77;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = SA86URPG2G;
+						ProvisioningStyle = Manual;
 					};
 					134615CB1B4CBCE3007E3FB2 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = SA86URPG2G;
 						TestTargetID = 134615B21B4CBCE3007E3FB2;
 					};
 				};
@@ -878,6 +895,7 @@
 				139FE1121B776AA0007988C3 /* gallery_icon_dark.png in Resources */,
 				8050558A1BDE2A930062F9EA /* arrow11@2x.png in Resources */,
 				A44212831E87BC2B00A47CEB /* SummaryTableCell.xib in Resources */,
+				F765FE9A1FC5E0CF00304A02 /* EnquiryDetailsVC.xib in Resources */,
 				6BDCB1B41BDF20810099CFCD /* MHTabBarActiveTab@2x.png in Resources */,
 				1388BAD21B7D31C700F5E73F /* setting.png in Resources */,
 				139FE1371B778CAF007988C3 /* attendancereport.png in Resources */,
@@ -948,6 +966,7 @@
 				139FE1311B7781E7007988C3 /* AFHTTPRequestOperation.m in Sources */,
 				1368199B1B6E64D0000FAAFD /* MBProgressHUD.m in Sources */,
 				136819971B6E64BE000FAAFD /* Reachability.m in Sources */,
+				F765FE991FC5E0CF00304A02 /* EnquiryDetailsVC.m in Sources */,
 				1319CD4A1B8F81C7002A0EA5 /* CarbonTabSwipeNavigation.m in Sources */,
 				A4E2606D1ED140FE00A424F2 /* EnquiryDialFollowUpViewController.m in Sources */,
 				136559A81B7910680050E4CF /* CollectionViewCell.m in Sources */,
@@ -1094,15 +1113,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Gedela Bhawani (944JJ94MSS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W2P5VAXR77;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SA86URPG2G;
 				INFOPLIST_FILE = BuildAuto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.main.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osoftec.TecTrackerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f21b3bf9-b214-4fe9-ac94-155c5dd62807";
+				PROVISIONING_PROFILE_SPECIFIER = TecTracker_Dev;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1113,16 +1132,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Gedela Bhawani (944JJ94MSS)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W2P5VAXR77;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SA86URPG2G;
 				INFOPLIST_FILE = BuildAuto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.main.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.osoftec.TecTrackerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "6d47e6c2-4069-46f9-b9a7-0eb17bc18c6d";
+				PROVISIONING_PROFILE_SPECIFIER = TecTracker_Adhoc;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -1131,6 +1150,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SA86URPG2G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1151,6 +1172,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = SA86URPG2G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
